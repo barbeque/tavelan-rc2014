@@ -2103,16 +2103,16 @@
 		(uuid "bde3ceee-4ef6-4371-a25c-3a76925f861e")
 	)
 	(junction
-		(at 48.26 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c92b0f33-1fd0-4e9e-b8ed-1fc80b1f3c5e")
-	)
-	(junction
 		(at 240.03 205.105)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb295379-abf7-4f76-9c7c-6993ca5aa7f6")
+	)
+	(junction
+		(at 48.26 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd70c81d-0c14-4f38-b0e0-003fcd0ff4db")
 	)
 	(junction
 		(at 22.86 38.735)
@@ -2149,16 +2149,6 @@
 			(type default)
 		)
 		(uuid "0727154e-9394-46ea-bdb1-5dd16a22551d")
-	)
-	(wire
-		(pts
-			(xy 48.26 90.17) (xy 48.26 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1361fa3f-aa6d-4dfc-a49e-f491cc19232d")
 	)
 	(wire
 		(pts
@@ -2302,7 +2292,7 @@
 	)
 	(wire
 		(pts
-			(xy 42.545 90.17) (xy 48.26 90.17)
+			(xy 43.18 106.045) (xy 48.26 106.045)
 		)
 		(stroke
 			(width 0)
@@ -2352,7 +2342,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 90.17) (xy 40.005 83.82)
+			(xy 40.64 106.045) (xy 40.64 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2552,6 +2542,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 78.74) (xy 48.26 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b38ac4d3-761b-433e-857d-40c007cc61eb")
+	)
+	(wire
+		(pts
 			(xy 38.735 38.735) (xy 44.45 38.735)
 		)
 		(stroke
@@ -2562,7 +2562,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 83.82) (xy 34.29 83.82)
+			(xy 40.64 83.82) (xy 34.29 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2659,6 +2659,16 @@
 			(type default)
 		)
 		(uuid "ee38feae-2a0e-41d8-83a2-eb6ee3fb4d32")
+	)
+	(wire
+		(pts
+			(xy 48.26 94.615) (xy 48.26 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1286279-5870-4cf2-b55b-f289971afaaf")
 	)
 	(wire
 		(pts
@@ -6318,6 +6328,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 53.34 92.075 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b12bfc5-e469-4f5d-a5a4-f500c6cfd44a")
+		(property "Reference" "J3"
+			(at 54.61 94.6151 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Power_SW"
+			(at 54.61 92.0751 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal"
+			(at 53.34 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4d17db76-72f1-431f-8fd1-820060250582")
+		)
+		(pin "1"
+			(uuid "0ea91915-0379-4c16-bb55-590fb69976e3")
+		)
+		(instances
+			(project "tavelan-mini-rc2014"
+				(path "/7425670c-d60a-42da-8c57-0373ad05bc43"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 123.19 86.36 0)
 		(unit 1)
@@ -9684,7 +9764,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 40.005 95.25 90)
+		(at 40.64 111.125 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9693,7 +9773,7 @@
 		(fields_autoplaced yes)
 		(uuid "dbb84692-aa9d-43db-8da8-c5953e29265b")
 		(property "Reference" "J2"
-			(at 44.45 93.345 90)
+			(at 45.085 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9702,7 +9782,7 @@
 			)
 		)
 		(property "Value" "Regulated_Power"
-			(at 44.45 95.885 90)
+			(at 45.085 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9711,7 +9791,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal"
-			(at 40.005 95.25 0)
+			(at 40.64 111.125 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9720,7 +9800,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.005 95.25 0)
+			(at 40.64 111.125 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9729,7 +9809,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.005 95.25 0)
+			(at 40.64 111.125 0)
 			(effects
 				(font
 					(size 1.27 1.27)
